@@ -4,7 +4,7 @@
 // 1. convertToSeconds
 // Write a function called convertToSeconds that takes
 // a number of minutes as an argument and returns
-// the number of seconds
+// the number of seconds hi
 
 function convertToSeconds() {}
 
