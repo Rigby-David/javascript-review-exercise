@@ -4,16 +4,20 @@
 // 1. convertToSeconds
 // Write a function called convertToSeconds that takes
 // a number of minutes as an argument and returns
-// the number of seconds hi
+// the number of seconds
 
-function convertToSeconds() {}
+function convertToSeconds(num1) {
+    return num1 * 60;
+}
 
 console.log(`convertToSeconds(10) === 600 : ${convertToSeconds(10) === 600}`);
 
 // 2. areaOfTriangle
 // Write a function called areaOfTriangle that takes in the base and height
 // of a triangle and returns its area
-function areaOfTriangle() {}
+function areaOfTriangle(num1, num2) {
+    return (num1 * num2) / 2;
+}
 console.log(`areaOfTriangle(5, 10) === 25 : ${areaOfTriangle(5, 10) === 25}`);
 
 // 3. lessThan100
@@ -34,7 +38,14 @@ console.log(`lessThan100(100, 10) === false : ${lessThan100(100, 10) === false}`
 // that accepts a first_name and last_name as required parameters
 // and a third parameter called middle_name which is optional.
 // The function should return a string with the first, middle and last names
-function getFormattedName() {}
+function getFormattedName(first, last, middle) {
+    if (!middle) {
+        return first + ' ' + last;
+    } else {
+        const fullName = first + ' ' + middle + ' ' + last;
+        return fullName;
+    } 
+}
 console.log(
     `getFormattedName('Ruth', 'Ginsburg') === 'Ruth Ginsburg': ${
         getFormattedName('Ruth', 'Ginsburg') === 'Ruth Ginsburg'
@@ -56,7 +67,9 @@ console.log(
 //    that checks if the year is a leap year, and returns the correct
 //    number of days for Feb. The default value for the year should be
 //    the current year
-function daysInMonth() {}
+function daysInMonth(month, year = 13) {
+   // if (month < )
+}
 console.log(`daysInMonth(2) === 29: ${daysInMonth(2) === 29}`);
 console.log(`daysInMonth(3) === 31: ${daysInMonth(3) === 31}`);
 console.log(`daysInMonth(11) === 30: ${daysInMonth(11) === 30}`);
